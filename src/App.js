@@ -1,5 +1,5 @@
 import RecipesContainer from "./containers/RecipesContainer";
-// import "/styles/AppStyles.css";
+import "./styles/AppStyles.css";
 
 function App() {
   return (

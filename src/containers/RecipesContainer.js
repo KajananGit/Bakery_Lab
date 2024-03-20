@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Cake from "../components/Cake";
+import "../styles/RecipesContainerStyles.css"
 
 const RecipesContainer = () => {
     const [totalSales, setTotalSales] = useState(0);

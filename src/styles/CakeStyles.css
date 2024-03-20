@@ -1,3 +1,22 @@
-h3 {
-    color: red;
+h2 {
+    font-family: courier new;
+    text-shadow: 4px 4px 6px grey;
 }
+
+h3 {
+    font-family: courier new;
+    text-shadow: 4px 4px 6px grey;
+}
+
+p {
+    font-family: courier new;
+    text-shadow: 4px 4px 6px grey;
+}
+
+ul {
+    list-style-type: circle;
+    font-family: courier new;
+    text-shadow: 4px 4px 6px grey;
+}
+
+

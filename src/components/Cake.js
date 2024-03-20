@@ -6,20 +6,16 @@ const Cake = ({cake, sales, onButtonClick}) => {
         onButtonClick(sales + cake.price);
     }
 
-    
+    const listIngredients = () => {
+        const listItems = cake.ingredients.map(ingredient => <li>{ingredient}</li>);
+        return <ul>{listItems}</ul>;
+    }
 
     return ( 
         <>
             <h3>{cake.cakeName}</h3>
             <p>Ingredients: </p>
-            <ul>
-                <li>{cake.ingredients[0]}</li>
-                <li>{cake.ingredients[1]}</li>
-                <li>{cake.ingredients[2]}</li>
-                <li>{cake.ingredients[3]}</li>
-                <li>{cake.ingredients[4]}</li>
-                <li>{cake.ingredients[5]}</li>
-            </ul>
+            {listIngredients()}
             <p>Price: {cake.price}</p>
             <p>Rating: {cake.rating}</p>
             <button onClick={handleSale}>Sell Cake</button>
